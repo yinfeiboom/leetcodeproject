@@ -21,11 +21,20 @@ package Top100Liked;
 n 将在 [1, 10000]之间。
 nums 的每个元素都将在 [-9999, 9999]之间。
  */
-public class Title704 {
+public final class Title704 implements Cloneable {
+
+
     public static void main(String[] args){
         Title704 title704=new Title704();
         int[]nums={-1,0,3,5,9,12};
        System.out.println( title704.search(nums,-1));
+
+        try {
+            System.out.println(title704.toString());
+            System.out.println(title704.clone()==title704);
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
 
     }
 //二分查找
