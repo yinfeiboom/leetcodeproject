@@ -1,4 +1,4 @@
-package Top100Liked;
+package Top100Liked.DynamicProgramming;
 
 import java.util.Arrays;
 
